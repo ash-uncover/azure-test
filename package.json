@@ -1,0 +1,27 @@
+{
+  "name": "azure-test",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "build:dev": "webpack --config webpack.config.dev.js",
+    "start": "npm run build && node server.bundle.js",
+    "watch": "webpack serve --config webpack.config.dev.js --progress --mode development"
+  },
+  "dependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "babel-loader": "latest",
+    "css-loader": "latest",
+    "express": "latest",
+    "node-sass": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "sass-loader": "latest",
+    "style-loader": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
