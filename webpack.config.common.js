@@ -1,5 +1,6 @@
 /* eslint-disable */
 
+const webpack = require('webpack')
 const path = require('path')
 
 const dir_build = path.resolve(__dirname, 'dist')
@@ -18,6 +19,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       title: 'Azure Test From Webpack',
+    }),
+    new webpack.EnvironmentPlugin({
+      MY_ENV_VARIABLE: 'from webpack file'
     }),
   ],
 

@@ -9,6 +9,8 @@ import './i18n'
 
 import App from 'components/App'
 
+console.log(process.env.MY_ENV_VARIABLE)
+
 ReactDOM.render(
   <Router hashType='noslash'>
     <App />
