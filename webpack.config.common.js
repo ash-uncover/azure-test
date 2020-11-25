@@ -3,6 +3,7 @@
 const path = require('path')
 
 const dir_build = path.resolve(__dirname, 'dist')
+const dir_src = path.resolve(__dirname, 'src')
 const node_modules = path.resolve(__dirname, 'node_modules')
 const pathToReact = path.resolve(node_modules, 'react/dist/react.min.js')
 
@@ -35,6 +36,7 @@ module.exports = {
     rules: [
       {
         test: /.(jsx|js)$/,
+        include: dir_src,
         use: [
           { loader: 'babel-loader' }
         ]

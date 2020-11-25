@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "build:dev": "webpack --config webpack.config.dev.js",
-    "start": "npm run build && node server.bundle.js",
+    "start": "node server.js",
     "start:dev": "webpack serve --config webpack.config.dev.js --progress"
   },
   "dependencies": {
@@ -18,9 +18,14 @@
     "css-loader": "latest",
     "express": "latest",
     "html-webpack-plugin": "latest",
+    "i18next": "latest",
+    "i18next-browser-languagedetector": "latest",
+    "i18next-http-backend": "latest",
     "node-sass": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-i18next": "latest",
+    "react-router-dom": "latest",
     "sass-loader": "latest",
     "style-loader": "latest",
     "webpack": "latest",

@@ -7,14 +7,20 @@
   margin: 0.5rem;
 }
 
+.image-small {
+  width: 30px;
+  height: 20px;
+
+  border: 1px solid blue;
+  margin: 0.5rem;
+}
+
 .image2 {
   display: inline-block;
   background-image: url('assets/images/test_2.jpg');
   background-size: contain;
 }
 
-.image5 {
-  display: inline-block;
-  background-image: url('./assets/images/test_2.jpg');
-  background-size: contain;
+.link {
+  margin: 0.5rem;
 }
