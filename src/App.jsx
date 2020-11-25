@@ -10,14 +10,35 @@ const App = () => {
       <div>
         Azure Test Webpack
       </div>
+
       <div>
-        <img className='image' src={img1} alt='image1' />
+        <img
+          className='image'
+          src={img1}
+          alt='image1'
+        />
       </div>
+
       <div>
-        <span className='image image2' />
+        <span
+          className='image image2'
+        />
       </div>
+
       <div>
-        <img src='assets/images/test_3.jpg' alt='image3' />
+        <img
+          className='image'
+          src={new URL('assets/images/test_3.jpg', import.meta.url)}
+          alt='image3'
+        />
+      </div>
+
+      <div>
+        <img
+          className='image'
+          src={new URL('assets/images/test_4.png', import.meta.url)}
+          alt='image4'
+        />
       </div>
     </div>
   )
